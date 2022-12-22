@@ -14,3 +14,7 @@ The following deliverables were created:
 -  A third tabel was created to list employee mentorship-eligibility based birth dates bewteen January 1, 1964 and December 31, 1965 
 -  The mentorship data tabel is saved as mentorship_eligibility.csv 
 ## Summary 
+- How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+72,458 positions will need to be filled 
+- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+There are currently 72,458 employees serving under seven distincit titles that could potentially retire and 1,550 employees in need of mentorship out of the total 300,025 employees. 
