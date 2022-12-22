@@ -30,11 +30,12 @@ FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
 
 DROP TABLE dept_emp;
 CREATE TABLE dept_emp (
+	emp_no VARCHAR(6) NOT NULL,
     dept_no VARCHAR(6) NOT NULL,
-    emp_no VARCHAR(6) NOT NULL,
       from_date DATE NOT NULL,
       to_date DATE NOT NULL,
   FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
+ FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
   PRIMARY KEY (emp_no, dept_no)
 );
 
@@ -78,8 +79,42 @@ ORDER BY num_employees DESC;
 
 
 -- Create a Mentorship Eligiblity Tabel for current temployees 1954-01-01 - 1965-12-31 
+-- employee data and titles data 
+-- join employees and dept_emp tables o the primary key 
+-- filter the data on the to_date to all current employees
+-- fileter data on the birth_date columns to get all employees brith rnage 1965-01-01 to 1965-12-31
+-- order table by employee number 
+-- export to mentorship eligibility table as mentorship_eligibilty.csv
+
+DROP TABLE mentorship_eligibilty; 
+SELECT DISTINCT on (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, ed.from_date, ed.to_date, t.title
+INTO mentorship_eligibilty
+FROM employees AS e
+INNER JOIN dept_emp AS ed
+ON (e.emp_no = ed.emp_no) 
+INNER JOIN titles as t
+ON (e.emp_no = t.emp_no) 
+WHERE e.birth_date BETWEEN '1965-01-01' AND '1965-12-31'
+AND ed.to_date > NOW() -- exclude employees who have already left the company
+ORDER BY e.emp_no ASC; 
 
 
+select * from  mentorship_eligibilty; 
+
+-- --------------------------
+select emp_no from  dept_emp; 
+select emp_no from employees;
+select * from titles; 
+
+select e.emp_no, e.birth_date, x.from_date, x.to_date
+FROM employees AS e
+LEFT JOIN dept_emp AS x
+ON (e.emp_no = x.emp_no)
+WHERE e.birth_date BETWEEN '1965-01-01' AND '1965-12-31'
+
+
+
+-- ------------------------------------
 
 SELECT first_name, last_name
 FROM employees
