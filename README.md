@@ -17,4 +17,4 @@ The following deliverables were created:
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 72,458 positions will need to be filled 
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-There are currently 72,458 employees serving under seven distincit titles that could potentially retire and 1,550 employees in need of mentorship out of the total 300,025 employees. 
+There are currently 72,458 employees serving under seven distincit titles that could potentially retire and 1,550 employees in need of mentorship out of the total 300,025 employees. Additional analysis is needed to discover how many employees under each title need mentorship. This will assist with addressing the question regarding if there are enough qualified employees to serve in a mentorship role. I may also be benefical to disocver how long each employee has been in their current role. An employee who has been in their current role less then a year would not be a good fit for mentoring a new hire. 
