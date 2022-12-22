@@ -7,5 +7,5 @@ The following deliverables were created:
 - Deliverable 3: A written report on the employee database analysis 
 ## Results
 
-https://github.com/aahudson/Pewlett-Hackard-Analysis/blob/main/Number_of_Titles.png
+![alt text](https://github.com/aahudson/Pewlett-Hackard-Analysis/blob/main/Number_of_Titles.png)
 ## Summary 
