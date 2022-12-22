@@ -113,7 +113,7 @@ LEFT JOIN dept_emp AS x
 ON (e.emp_no = x.emp_no)
 WHERE e.birth_date BETWEEN '1965-01-01' AND '1965-12-31'
 
-
+ 
 
 -- ------------------------------------
 
